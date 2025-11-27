@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-text: #0A1128;
+    --color-buttons: #006992;
+    --color-fons: #006992;
+    /* Color fons anterior passat a hsl */
+    --color-fons2: hsla(196.85, 100%, 28.63%, 80% );
+    --color-accent: #E16F7C;
+}
+body {
+    font-size: 20px;
+    background-color: var(--color-fons2);
+
+}
+h1 {
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+}
+
+/* Titulos como Platos estrella o Partes del menu*/
+.titulo {
+    border: 3px solid var(--color-fons2);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.titulo h2 {
+    font-size: 2rem;
+}

@@ -1,0 +1,39 @@
+* {
+    /* border: 1px solid red; */
+}
+
+header {
+    background-color: #006992;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    margin-bottom: 1vh;
+}
+
+header img {
+    padding-top: 20px;
+    height: 10vh;
+}
+header a {
+    text-align: right;  
+    font-size: 1rem;
+    padding: 0 5px;
+    
+}
+header nav {
+    position: absolute;
+    top: 7%;
+    right: 1%;
+    /* right: 15%;
+    top: 7%; */
+}
+
+@media (min-width: 1024px) {
+    header nav {
+    position: absolute;
+    right: 10%;
+    }
+    header a {
+        padding: 0 50px;
+        font-size: 1.5rem;
+    }
+}

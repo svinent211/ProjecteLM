@@ -1,0 +1,59 @@
+
+
+main {
+    position: relative;
+}
+
+/* Imatge principal amb eslògan */
+main section:first-of-type {
+    height: 30vh;
+    position: relative;
+    margin-bottom: 1vh;
+}
+main section:first-of-type img {
+    position: absolute;
+    height: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+main section:first-of-type h2{
+    position: relative;
+    width: 30vw;
+    min-width: 300px;
+    max-width: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15vh;
+    text-align: center;
+    color: var(--color-text);
+    background-color: var(--color-buttons);
+}
+
+main section:first-of-type a {
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(15vh + 2rem);
+    text-align: center;
+}
+
+main section:first-of-type p {
+    position: absolute;
+    width: 70vw;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(15vh + 4rem);
+    text-align: center;
+}
+
+/* Apartat de plats estrella*/
+article {
+    border: 1px solid var(--color-buttons)
+}
+article img {
+    position: relative;
+    height: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
