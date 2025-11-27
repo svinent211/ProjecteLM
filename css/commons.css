@@ -37,6 +37,7 @@ a:hover {
     border: 3px solid var(--color-fons2);
     text-align: center;
     margin-bottom: 10px;
+    width: calc(100vw - 1.5rem + 3px);
 }
 .titulo h2 {
     font-size: 2rem;

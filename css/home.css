@@ -6,24 +6,25 @@ main {
 
 /* Imatge principal amb eslògan */
 main section:first-of-type {
-    height: 30vh;
+    /* height: 30vh; */
     position: relative;
-    margin-bottom: 1vh;
+    /* margin-bottom: 1vh; */
 }
 main section:first-of-type img {
-    position: absolute;
-    height: 30vh;
+    position: relative;
+    max-height: 40vh;
+    max-width: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
 main section:first-of-type h2{
-    position: relative;
+    position: absolute;
     width: 30vw;
-    min-width: 300px;
-    max-width: 30vh;
+    min-width: 260px;
+    max-width: 400px;
     left: 50%;
     transform: translateX(-50%);
-    top: 15vh;
+    top: 10vh;
     text-align: center;
     color: var(--color-text);
     background-color: var(--color-buttons);
@@ -31,16 +32,23 @@ main section:first-of-type h2{
 
 main section:first-of-type a {
     position: absolute;
-    width: 70vw;
+    width: 30vw;
+    min-width: 260px;
+    max-width: 400px;
     left: 50%;
+    background-color: var(--color-buttons);
+    color: var(--color-accent);
     transform: translateX(-50%);
-    top: calc(15vh + 2rem);
+    top: calc(10vh + 4rem);
     text-align: center;
 }
 
 main section:first-of-type p {
     position: absolute;
-    width: 70vw;
+    width: 30vw;
+    min-width: 260px;
+    max-width: 400px;
+    background-color: var(--color-buttons);
     left: 50%;
     transform: translateX(-50%);
     top: calc(15vh + 4rem);
@@ -49,11 +57,34 @@ main section:first-of-type p {
 
 /* Apartat de plats estrella*/
 article {
-    border: 1px solid var(--color-buttons)
+    border: 2px solid var(--color-buttons);
+    position: relative;
+    height: 300px;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
 article img {
     position: relative;
+    max-height: 250px;
     height: 30vh;
+    top: 12%;
     left: 50%;
     transform: translateX(-50%);
+}
+article p {
+    position: relative;
+    top: 5vh;
+    width: 100%;
+    padding-left: 1rem;
+
+}
+
+
+@media (min-width: 600px) {
+    article {
+        height: 55vw;
+        max-height: 550px;
+    }
 }
