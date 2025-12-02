@@ -10,9 +10,14 @@
 </head>
 <body>
     <header>
-        <img src="./assets/img/logonou.png" alt="logo">
-        <nav>
+        <div class="header-buttons">
+            <img id="btnMenu-close" class="display-none" src="assets/iconos/icon-close-menu-cream.png" alt="menu-close">
+            <img src="./assets/img/logonou.png" alt="logo">
+            <img id="btnMenu" src="assets/iconos/icon-menu-cream.png" alt="menu">
+        </div>
+        <nav class="menu">
             <a href="home.html">Home</a>
+            <a href="about.html">Sobre nosaltres</a>
             <a href="reserves.html">Reserves</a>
             <a href="carta.html">Carta</a>
             <a href="contacte.html">Contacte</a>
@@ -34,13 +39,39 @@
             <div class="titulo">
                 <h2>Platos estrella</h2>
             </div>
-            <article>
-                <img src="assets/img/calderetaLangosta.jpg" alt="imatgeDelPlat">
-                <p>Caldereta de Langosta</p>
-            </article>
+            <div>
+                <article>
+                    <img src="assets/img/calderetaLangosta.jpg" alt="imatgeDelPlat">
+                    <p>Caldereta de Langosta</p>
+                </article>
+                <article class="articlePC">
+                    <img src="assets/img/calderetaLangosta.jpg" alt="imatgeDelPlat">
+                    <p>Caldereta de Langosta</p>
+                </article>
+            </div>
         </section>
+        <footer>
+            
+            <div>
+                <img src="assets/img/logonou.png" alt="logo">
+                <h3>Adreça:</h3>
+                <p>C/???</p>
+            </div>
+            <div>
+                <h3>Xarxes socials</h3>
+                <a href="">Instagram</a>
+                <a href="">X</a>
+                <a href="">Facebook</a>
+            </div>
+            <div>
+                <p>@2025 Restaurant Gust</p>
+                <p>All rights reserved</p>
+                <a href="">Privacy policy</a>
+                <a href="">Terms of Service</a>
+            </div>
+        </footer>
 
     </main>   
-   
+   <script src="js/header.js"></script>
 </body>
 </html>

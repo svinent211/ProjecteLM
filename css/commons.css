@@ -1,6 +1,22 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    /* font-family:'OpenSans', sans-serif; */
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+
 }
 :root {
     --color-text: #0A1128;
@@ -10,6 +26,7 @@
     --color-fons2: hsla(196.85, 100%, 28.63%, 80% );
     --color-accent: #E16F7C;
 }
+
 body {
     font-size: 20px;
     background-color: var(--color-fons2);
@@ -37,8 +54,58 @@ a:hover {
     border: 3px solid var(--color-fons2);
     text-align: center;
     margin-bottom: 10px;
-    width: calc(100vw - 1.5rem + 3px);
+    width: calc(100vw - 0.0rem + 0px);
+    font-family: 'BebasNeue', sans-serif;
 }
+
 .titulo h2 {
     font-size: 2rem;
+}
+
+
+
+
+/* Footer */
+footer {
+    position: relative;
+}
+footer div{
+    display: inline-block;
+}
+footer img {
+    width: 75px;
+}
+footer h2 {
+    display: block;
+}
+footer a {
+    display: block;
+}
+/* Xarxes Socials */
+footer div:nth-of-type(2) {
+    text-align: right;
+    position: absolute;
+    top: 10%;
+    right: 10px;
+}
+/* Copyright & TOS */
+footer div:last-of-type {
+    display: block;
+}
+footer div:last-of-type a {
+    display: inline-block;
+}
+footer div:last-of-type a:first-of-type {
+    padding-left: 50%;
+}
+footer div:last-of-type p {
+    display: inline-block;
+}
+
+
+@media (min-width: 600px) {
+.titulo {
+        width: calc(100vw - 1vw + 3px); /*Corregir anchura del titulo*/
+
+}
 }
