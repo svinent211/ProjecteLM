@@ -28,12 +28,13 @@ header a {
     
 }
 header nav {
-    position: absolute;
+    padding-top: 5vh;
+    position: fixed;
     top: 7%;
     inset: 0;
     z-index: 100;
     display: none;
-    height: 120vh;
+    /* height: 120vh; */
     background-color: var(--color-buttons);
 }
 #btnMenu {
@@ -48,7 +49,7 @@ header nav {
     display: none;
 }
 #btnMenu-close {
-    position: absolute;
+    position: fixed;
     inset: 20px;
     height: 40px;
     z-index: 200;
@@ -59,16 +60,18 @@ header nav {
 
 
 @media (min-width: 1024px) {
-    header nav {
-        position: static;
-        /* right: 10%; */
+    .menu {
+        /* position: absolute; Esto lo arregla usando los 5vh padding-top */
+        
+        position: absolute;
         display: inline-block;
         background-color: transparent;
         text-align: right;
-        /* top: calc(20px + 5vh - 1rem);  */
-        /* Padding-bottom(Header) + height(Header) + 1rem*/
         height: initial;
-
+        padding: 0; /* Quitar*/ 
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
    
@@ -78,6 +81,10 @@ header nav {
         text-align: right;
         border: none;
         display: inline-block;
+        /* Centrar enllaços dins el contenidor .menu */
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
 
         
     }

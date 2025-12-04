@@ -44,9 +44,10 @@ h3 {
 
 a {
     text-decoration: none;
+    font-weight: bold;
 }
 a:hover {
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Titulos como Platos estrella o Partes del menu*/
@@ -54,15 +55,13 @@ a:hover {
     border: 3px solid var(--color-fons2);
     text-align: center;
     margin-bottom: 10px;
-    width: calc(100vw - 0.0rem + 0px);
+    width: calc(100% - 0.0rem + 0px);
     font-family: 'BebasNeue', sans-serif;
 }
 
 .titulo h2 {
     font-size: 2rem;
 }
-
-
 
 
 /* Footer */
@@ -111,8 +110,5 @@ footer div:last-of-type p {
 
 
 @media (min-width: 600px) {
-.titulo {
-        width: calc(100vw - 1vw + 3px); /*Corregir anchura del titulo*/
 
-}
 }

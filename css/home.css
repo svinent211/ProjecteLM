@@ -60,6 +60,7 @@ section:nth-of-type(2) div:nth-of-type(2) {
     margin: 0 auto;
     margin-bottom: 10vh;
     /* border: solid 1px red; */
+    position: relative;
 }
 article {
     border: 2px solid var(--color-buttons);
@@ -89,6 +90,12 @@ article p {
 }
 .flechas {
     height: 60px;
+    position: absolute;
+    top: 10vh;
+
+}
+.flechas[alt="flechaDerecha"] {
+    right: 0;
 }
 
 
