@@ -1,25 +1,30 @@
 
 header {
     background-color: #006992;
-    padding-bottom: 20px;
+    padding: 10px;
     font-family: 'OpenSans', sans-serif;
-    margin-bottom: 1vh;
+    position: relative;
 }
 /* Contenidor del logo i botons hamburguesa i X */
 .header-buttons {
-    position: relative;
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 header img[alt="logo"] {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     height: 10vh;
 }
 header a {
     text-align: center;  
     font-size: 3rem;
-    padding: 10px 5px;
+    padding: 0 5px;
     display: block;
     border-bottom: 2px solid var(--color-text);
+    color: var(--color-accent);
     
 }
 header nav {
@@ -28,6 +33,7 @@ header nav {
     inset: 0;
     z-index: 100;
     display: none;
+    height: 120vh;
     background-color: var(--color-buttons);
 }
 #btnMenu {
@@ -54,18 +60,20 @@ header nav {
 
 @media (min-width: 1024px) {
     header nav {
-    position: absolute;
-    right: 10%;
-    display: block;
-    background-color: transparent;
-    position: absolute;
-    text-align: right;
-    top: calc(20px + 5vh - 1rem); /* Padding-bottom(Header) + height(Header) + 1rem*/
+        position: static;
+        /* right: 10%; */
+        display: inline-block;
+        background-color: transparent;
+        text-align: right;
+        /* top: calc(20px + 5vh - 1rem);  */
+        /* Padding-bottom(Header) + height(Header) + 1rem*/
+        height: initial;
 
     }
-    
+
+   
     header a {
-        padding: 0 50px;
+        padding: 0 35px;
         font-size: 1.5rem;
         text-align: right;
         border: none;

@@ -13,7 +13,6 @@
 * {
     margin: 0;
     padding: 0;    
-    /* font-family:'OpenSans', sans-serif; */
     /* border: 1px solid red; */
     box-sizing: border-box;
 
@@ -30,6 +29,7 @@
 body {
     font-size: 20px;
     background-color: var(--color-fons2);
+    font-family:'OpenSans', sans-serif;
 
 }
 h1 {
@@ -71,6 +71,11 @@ footer {
 }
 footer div{
     display: inline-block;
+    margin-bottom: 10px;
+}
+/* Logo + divLogo */
+footer div:nth-of-type(1) {
+    width: 100%;
 }
 footer img {
     width: 75px;
@@ -81,8 +86,9 @@ footer h2 {
 footer a {
     display: block;
 }
+
 /* Xarxes Socials */
-footer div:nth-of-type(2) {
+footer div:nth-of-type(3) {
     text-align: right;
     position: absolute;
     top: 10%;
@@ -95,8 +101,9 @@ footer div:last-of-type {
 footer div:last-of-type a {
     display: inline-block;
 }
-footer div:last-of-type a:first-of-type {
-    padding-left: 50%;
+footer div:last-of-type a:last-of-type {
+    position: absolute;
+    right: 0;
 }
 footer div:last-of-type p {
     display: inline-block;

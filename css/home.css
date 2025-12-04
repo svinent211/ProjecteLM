@@ -6,9 +6,8 @@ main {
 
 /* Imatge principal amb eslògan */
 main section:first-of-type {
-    /* height: 30vh; */
     position: relative;
-    /* margin-bottom: 1vh; */
+    margin-bottom: 2vh;
 }
 main section:first-of-type img {
     position: relative;
@@ -29,7 +28,6 @@ main section:first-of-type h2{
     color: var(--color-text);
     background-color: var(--color-buttons);
 }
-
 main section:first-of-type a {
     position: absolute;
     width: 30vw;
@@ -57,12 +55,10 @@ main section:first-of-type p {
 
 /* Apartat de plats estrella*/
 section:nth-of-type(2) div:nth-of-type(2) {
-    /* position: absolute;
-    left: 50%;
-    transform: translateX(-50%); */
     width: 90vw;
     padding: 0;
     margin: 0 auto;
+    margin-bottom: 10vh;
     /* border: solid 1px red; */
 }
 article {
@@ -91,6 +87,9 @@ article p {
 .articlePC {
     display: none;
 }
+.flechas {
+    height: 60px;
+}
 
 
 @media (min-width: 600px) {
@@ -104,9 +103,11 @@ article p {
     main section:first-of-type p {
         top: calc(15vh + 4rem);
     }
+    
 
-
-
+    .flechas {
+        display: none;
+    }
     article {
         height: 55vw;
         max-height: 400px;
