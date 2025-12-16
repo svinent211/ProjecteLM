@@ -64,6 +64,7 @@ section:nth-of-type(2) div:nth-of-type(2) {
 }
 article {
     border: 2px solid var(--color-buttons);
+    border-radius: 35px;
     position: relative;
     height: 300px;
     width: 60%;
