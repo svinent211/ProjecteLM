@@ -9,6 +9,7 @@ main section:first-of-type {
     position: relative;
     margin-bottom: 2vh;
 }
+
 main section:first-of-type img {
     position: relative;
     max-height: 40vh;
