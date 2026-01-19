@@ -1,0 +1,55 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px 0; */
+}
+#principals, #entrants, #begudes, #postres{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    justify-content: space-evenly; */
+    align-items: center;
+}
+.carta {
+    display: block; /* Per no ser afectat per el selector de dalt*/
+}
+.plat {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    /* Borde */
+    border: 3px solid var(--color-accent);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+    /* Centrar imatge del plat */
+.plat > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Borde */
+}
+hr {
+
+    margin: 20px 0;
+    height: 3px;
+    width: calc(100% + 40px); /*Tamany + padding de .plat*2*/
+    background-color: var(--color-accent);
+    border: 0px;
+    align-self: baseline;
+    position: relative;
+    left: -20px;
+}
+    /* Tamany de la imatge */
+.plat > div > img {
+    width: 250px;
+}
+    /* Colocar nom del plat a la esquerra */
+.plat > div > p:nth-of-type(1) {
+    align-self: baseline;
+}
+ /* Colocar preu del plat a la dreta */
+.plat > div > p:nth-of-type(2) {
+    align-self: end;
+}
