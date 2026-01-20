@@ -103,11 +103,8 @@ article p {
 
 @media (min-width: 600px) {
 
-    main section:first-of-type h2 {
-        top: 10vh;
-    }
     main section:first-of-type a {
-        top: calc(10vh + 4rem);
+        top: calc(10vh + 4.5rem);
     }
     main section:first-of-type p {
         top: calc(15vh + 4rem);

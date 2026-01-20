@@ -25,9 +25,10 @@
     --color-fons2: hsla(196.85, 100%, 28.63%, 80% );
     --color-accent: #E16F7C;
 }
-
-body {
+html {
     font-size: 20px;
+}
+body {
     background-color: var(--color-fons2);
     font-family:'OpenSans', sans-serif;
 
@@ -111,6 +112,8 @@ footer div:last-of-type p {
 }
 
 
-@media (min-width: 600px) {
-
+@media (min-width: 577px) {
+    html {
+            font-size: 22px;
+    }
 }

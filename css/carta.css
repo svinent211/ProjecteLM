@@ -2,48 +2,44 @@
 main {
     display: flex;
     flex-direction: column;
-    /* gap: 20px 0; */
 }
-#principals, #entrants, #begudes, #postres{
+/* Centrar plats i wrap */
+.platos {
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap;
-    justify-content: space-evenly; */
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
-.carta {
-    display: block; /* Per no ser afectat per el selector de dalt*/
-}
+
 .plat {
     display: flex;
     flex-direction: column;
-    width: 75%;
-    /* Borde */
-    border: 3px solid var(--color-accent);
-    padding: 20px;
+    align-items: center;
+    width: 90%;;
     margin-bottom: 20px;
 }
-    /* Centrar imatge del plat */
+    /* Bordes de cada plat */
+.plat > div:first-of-type {
+    border-top: 3px solid var(--color-buttons);
+    height: 200px;
+}
 .plat > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 125px;
+    width: 280px;
     /* Borde */
+    padding: 20px;
+    border: 3px solid var(--color-buttons);
+    border-top: none;
 }
-hr {
 
-    margin: 20px 0;
-    height: 3px;
-    width: calc(100% + 40px); /*Tamany + padding de .plat*2*/
-    background-color: var(--color-accent);
-    border: 0px;
-    align-self: baseline;
-    position: relative;
-    left: -20px;
-}
     /* Tamany de la imatge */
 .plat > div > img {
-    width: 250px;
+    height: 125px;
 }
     /* Colocar nom del plat a la esquerra */
 .plat > div > p:nth-of-type(1) {
@@ -52,4 +48,19 @@ hr {
  /* Colocar preu del plat a la dreta */
 .plat > div > p:nth-of-type(2) {
     align-self: end;
+}
+
+@media (min-width: 577px) {
+    
+    .platos{
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .plat {
+        width: 45%;
+    }
+        /* Tamany de la imatge */
+    .plat > div > img {
+        height: 140px;
+    }
 }
