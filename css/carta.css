@@ -6,23 +6,25 @@ main {
 /* Centrar plats i wrap */
 .platos {
     display: flex;
+    width: fit-content;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 100%;
 }
 
 .plat {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;;
+    width: 90%;
     margin-bottom: 20px;
 }
     /* Bordes de cada plat */
 .plat > div:first-of-type {
-    border-top: 3px solid var(--color-buttons);
+    border-top: 3px solid var(--color-text);
     height: 200px;
 }
 .plat > div {
@@ -33,8 +35,10 @@ main {
     width: 280px;
     /* Borde */
     padding: 20px;
-    border: 3px solid var(--color-buttons);
+    border: 3px solid var(--color-text);
     border-top: none;
+
+    background-color: var(--color-buttons);
 }
 
     /* Tamany de la imatge */
@@ -55,12 +59,18 @@ main {
     .platos{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     }
     .plat {
-        width: 45%;
+        width: fit-content; /* Fa que el contenidor ocupi l'espai que ocupen els fills i no menys */
+        min-width: 20%;
     }
         /* Tamany de la imatge */
     .plat > div > img {
         height: 140px;
     }
+}
+
+@media (min-width: 992px) {
+    
 }
