@@ -20,7 +20,7 @@
 :root {
     --color-text: #0A1128;
     --color-buttons: #006992;
-    --color-fons: #006992;
+    --color-fons: hsla(196.85, 100%, 28.63%, 80% );
     /* Color fons anterior passat a hsl */
     --color-fons2: hsla(196.85, 100%, 28.63%, 80% );
     --color-accent: #E16F7C;
@@ -55,7 +55,7 @@ a:hover {
 
 /* Titulos como Platos estrella o Partes del menu*/
 .titulo {
-    border: 3px solid var(--color-fons2);
+    border: 3px solid var(--color-fons);
     text-align: center;
     margin-bottom: 10px;
     width: calc(100% - 0.0rem + 0px);
@@ -70,10 +70,11 @@ a:hover {
 /* Footer */
 footer {
     position: relative;
+    background-color: var(--color-buttons);
 }
 footer div{
     display: inline-block;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 /* Logo + divLogo */
 footer div:nth-of-type(1) {
