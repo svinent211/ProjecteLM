@@ -3,6 +3,50 @@ main {
     display: flex;
     flex-direction: column;
 }
+/* Filtros i nav dels plats */
+.filtros, section nav {
+    border: transparent;
+    background-color: var(--color-buttons);
+    margin: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtros button.filtrar {
+    border: 2px solid var(--color-accent);
+    
+}
+.filtros button {
+    border: 2px solid var(--color-fons2);
+    background-color: var(--color-);
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-accent);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.filtros button:hover {
+    color: var(--color-fons2);
+    border: 2px solid var(--color-fons2);
+    background-color: var(--color-accent);
+    opacity: 0.8;
+}
+
+.filtros p {
+    font-family: 'BebasNeue';
+    font-size: 1.5rem;
+}
+section nav {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+
 /* Centrar plats i wrap */
 .platos {
     display: flex;
