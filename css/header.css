@@ -58,7 +58,7 @@ header nav {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1210px) {
     .menu {
         /* position: absolute; Esto lo arregla usando los 5vh padding-top */
         
