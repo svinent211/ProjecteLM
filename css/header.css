@@ -47,7 +47,9 @@ header nav {
 }
 #btnMenu-close {
     position: fixed;
-    inset: 20px;
+    /* inset: 20px; */
+    top: 30px;
+    right: 30px;
     height: 40px;
     z-index: 200;
 }
@@ -85,6 +87,7 @@ header nav {
 
         
     }
+   
     #btnMenu, #btnMenu-close {
         display: none;
     }
