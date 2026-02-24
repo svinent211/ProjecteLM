@@ -33,6 +33,10 @@ body {
     font-family:'OpenSans', sans-serif;
 
 }
+/* Main */
+main {
+    padding: 0.5rem;
+}
 h1 {
     font-size: 1.8rem;
 }
@@ -56,10 +60,12 @@ a:hover {
 /* Titulos como Platos estrella o Partes del menu*/
 .titulo {
     border: 3px solid var(--color-fons);
+    border-radius: 1rem;
     text-align: center;
     margin-bottom: 10px;
     width: calc(100% - 0.0rem + 0px);
     font-family: 'BebasNeue', sans-serif;
+    background-color: var(--color-buttons);
 }
 
 .titulo h2 {
