@@ -67,9 +67,9 @@ section nav {
     width: 90%;
     margin-bottom: 20px;
 }
-    /* Bordes de cada plat */
+/* Bordes de cada plat */
 .plat > div:first-of-type {
-    border-top: 3px solid var(--color-text);
+    border-top: 2px solid var(--color-text);
     height: 200px;
 }
 .plat > div {
@@ -80,10 +80,10 @@ section nav {
     width: 280px;
     /* Borde */
     padding: 20px;
-    border: 3px solid var(--color-text);
+    border: 2px solid var(--color-text);
     border-top: none;
 
-    background-color: var(--color-buttons);
+    background-color: var(--color-fons);
 }
 
     /* Tamany de la imatge */
