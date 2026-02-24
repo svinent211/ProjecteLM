@@ -18,13 +18,14 @@ main section:first-of-type img {
     transform: translateX(-50%);
 }
 main section:first-of-type h2{
+    font-size: 1.3rem;
     position: absolute;
     width: 30vw;
     min-width: 260px;
     max-width: 400px;
     left: 50%;
     transform: translateX(-50%);
-    top: 6vh;
+    top: 3vh;
     text-align: center;
     color: var(--color-text);
     background-color: var(--color-buttons);
@@ -38,7 +39,7 @@ main section:first-of-type a {
     background-color: var(--color-buttons);
     color: var(--color-accent);
     transform: translateX(-50%);
-    top: calc(6vh + 4rem);
+    top: calc(3vh + 4rem);
     text-align: center;
 }
 
@@ -50,7 +51,7 @@ main section:first-of-type p {
     background-color: var(--color-buttons);
     left: 50%;
     transform: translateX(-50%);
-    top: calc(9vh + 4rem);
+    top: calc(6vh + 4rem);
     text-align: center;
 }
 
@@ -103,11 +104,14 @@ article p {
 
 @media (min-width: 600px) {
 
+    main section:first-of-type h2 {
+        font-size: 1.5rem;
+    }
     main section:first-of-type a {
-        top: calc(10vh + 4.5rem);
+        top: calc(6vh + 4.5rem);
     }
     main section:first-of-type p {
-        top: calc(15vh + 4rem);
+        top: calc(11vh + 4rem);
     }
     
 
