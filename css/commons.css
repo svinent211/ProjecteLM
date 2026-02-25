@@ -38,6 +38,9 @@ main {
     padding: 0.5rem;
     font-family: 'Montserrat';
 }
+h1, h2, h3 {
+    font-family: OpenSans;
+}
 h1 {
     font-size: 1.8rem;
 }
