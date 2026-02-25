@@ -104,7 +104,7 @@ section nav {
     .platos{
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     }
     .plat {
         width: fit-content; /* Fa que el contenidor ocupi l'espai que ocupen els fills i no menys */
