@@ -20,7 +20,7 @@ main {
 }
 .filtros button {
     border: 2px solid var(--color-fons2);
-    background-color: var(--color-);
+    background-color: var(--color-fons2);
     padding: 0.25rem 1rem;
     font-size: 1rem;
     font-weight: bold;
@@ -105,6 +105,14 @@ section nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    }
+    .plat:hover, .filtros:hover, section nav:hover {
+        transform:scale(1.005);
+    }
+    section nav {
+        flex-direction: row;
+        gap: 0 2rem;
+        /* justify-content: space-around; */
     }
     .plat {
         width: fit-content; /* Fa que el contenidor ocupi l'espai que ocupen els fills i no menys */

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Gust</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/commons.css">
+    <link rel="stylesheet" href="css/reserves.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./assets/img/logonou.png" alt="logo">
+            <div class="header-buttons">
+                <img id="btnMenu" src="assets/iconos/icon-menu-cream.png" alt="menu">
+            </div>
+            <nav class="menu">
+                <a id="aHome">Home</a>
+                <a id="aSobreNosaltres">Sobre nosaltres</a>
+                <a id="aReserves">Reserves</a>
+                <a id="aCarta">Carta</a>
+                <a id="aContacte">Contacte</a>
+            </nav>
+        </div>
+        <img id="btnMenu-close" class="display-none" src="assets/iconos/icon-close-menu-cream.png" alt="menu-close">
+
+    </header>
+
+
+    <main>
+
+        <div class="formulari">
+            <h2>Formulari</h2>
+            <form action="" method="get">
+                <label for="inputNombre">
+                    <img src="assets/iconos/icono_nombre.png">
+                    Nom
+                    <input type="text" id="inputNombre" name="nombre" autofocus required>
+                </label>
+                <label for="inputDate">
+                    <img src="assets/iconos/icono_date.png">
+                    Data
+                    <input type="date" id="inputDate" name="date" min="2026-04-30" required>
+                </label>
+                <label for="inputHora">
+                    <img src="assets/iconos/icono_clock.png">
+                    Hora
+                    <input type="time" id="inputHora" name="hora" required>
+                </label>
+                <label for="inputPersones">
+                    <img src="assets/iconos/icono_persones.png">
+                    NºPersones
+                    <input type="number" id="inputPersones" name="nPersones" required>
+                </label>
+                <label for="inputContacte">
+                    <img src="assets/iconos/icono_contacte.webp">
+                    Contacte
+                    <input type="tel" id="inputContacte" name="telefono" pattern="[+]?[0-9]+" required>
+                </label>
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div>
+            <img src="assets/img/logonou.png" alt="logo">
+        </div>
+        <div>
+            <h3>Adreça:</h3>
+            <p>C/???</p>
+        </div>
+        <div>
+            <h3>Xarxes socials</h3>
+            <a href="">Instagram</a>
+            <a href="">X</a>
+            <a href="">Facebook</a>
+        </div>
+        <div>
+            <p>@2025 Restaurant Gust</p>
+            <p>All rights reserved</p>
+            <nav>
+                <a href="">Privacy policy</a>
+                <a href="">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/reserves.js"></script>
+
+</body>
+</html>

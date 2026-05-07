@@ -23,6 +23,7 @@ header a {
     padding: 10px 5px;
     display: block;
     border-bottom: 2px solid var(--color-text);
+    cursor: pointer;
     
 }
 header nav {
