@@ -34,3 +34,26 @@ aCarta.addEventListener("click", ()=> {
 aContacte.addEventListener("click", ()=> {
     window.location.href= "/Projecte/contacte.html";
 });
+
+//Treu /Projecte/nompagina.html
+let url = window.location.pathname;
+//Elimina /Projecte/
+let pagina = url.substring(url.lastIndexOf('/')+ 1);
+
+switch (pagina) {
+    case "index.html":
+        aHome.classList.add("pagina_activa");
+        break;
+    case "reserves.html":
+        aReserves.classList.add("pagina_activa");
+        break;
+    case "sobreNosaltres.html":
+        aSNosaltres.classList.add("pagina_activa");
+        break;
+    case "carta.html":
+        aCarta.classList.add("pagina_activa");
+        break;
+    case "contacte.html":
+        aContacte.classList.add("pagina_activa");
+        break;
+}

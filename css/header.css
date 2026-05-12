@@ -1,4 +1,12 @@
 
+
+/* Marcar en quina pagina estás actualment */
+.pagina_activa {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+
 header {
     background-color: #006992;
     padding: 10px;
