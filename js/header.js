@@ -20,19 +20,19 @@ const aCarta = document.querySelector("#aCarta");
 const aContacte = document.querySelector("#aContacte");
 
 aHome.addEventListener("click", ()=>{
-    window.location.href= "/Projecte/index.html";
+    window.location.href= "index.html";
 });
 aReserves.addEventListener("click", ()=>{
-    window.location.href= "/Projecte/reserves.html";
+    window.location.href= "reserves.html";
 });
 aSNosaltres.addEventListener("click", ()=> {
-    window.location.href= "/Projecte/sobreNosaltres.html";
+    window.location.href= "sobreNosaltres.html";
 });
 aCarta.addEventListener("click", ()=> {
-    window.location.href = "/Projecte/carta.html";
+    window.location.href = "carta.html";
 });
 aContacte.addEventListener("click", ()=> {
-    window.location.href= "/Projecte/contacte.html";
+    window.location.href= "contacte.html";
 });
 
 //Treu /Projecte/nompagina.html
