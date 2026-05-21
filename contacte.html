@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/commons.css">
     <link rel="stylesheet" href="css/contacte.css">
 </head>
+
 <body>
     <header>
         <div>
@@ -30,37 +32,65 @@
         <section class="dades">
             <h2>Dades contacte</h2>
             <div>
-                <img src="assets/iconos/" alt="">
-                <p>C/???</p>
+                <img src="assets/iconos/icono_map.png" alt="">
+                <p>Av. de Vives Llull, 15, Maó</p>
             </div>
             <div>
                 <img src="assets/iconos/icono_contacte.webp" alt="icono telefono">
                 <p>91 555 55 55</p>
             </div>
             <div>
-                <img src="assets/iconos/" alt="icono email">
+                <img src="assets/iconos/icono_email.png" alt="icono email">
                 <p>contacte@gustmenorca.com</p>
             </div>
-            <div><a href=""></a>Instagram</div>
-            <div><a href=""></a>Facebook</div>
-            <div><a href=""></a>X/Twitter</div>
-            
+            <div>
+                <img src="assets/iconos/icono_instagram.png" alt="icono Instagram">
+                <a href="">Instagram</a>
+            </div>
+            <div>
+                <img src="assets/iconos/icono_facebook.png" alt="icono Facebook">
+                <a href="">Facebook</a>
+            </div>
+            <div>
+                <img src="assets/iconos/icono_XTwitter.png" alt="icono XTwitter">
+                <a href="">X/Twitter</a>
+            </div>
+
         </section>
 
-        <section class="mapa"></section>
-        
+        <section class="mapa">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.409007286259!2d4.252140476407643!3d39.88747408768111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1295879499ca9293%3A0x67689d7fe11f1c6f!2sIES%20Joan%20Ramis%20i%20Ramis!5e0!3m2!1ses!2ses!4v1779374461146!5m2!1ses!2ses"
+                width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
         <section class="consultes">
             <h2>Consultes generals</h2>
-
+            <form action="" method="get">
+                <label for="inputNombre">
+                    <img src="assets/iconos/icono_nombre.png">
+                    Nom
+                    <input type="text" id="inputNombre" name="nombre" required>
+                </label>
+                <label for="inputEmail">
+                    <img src="assets/iconos/icono_email.png">
+                    Email
+                    <input type="email" id="inputEmail" name="email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                </label>
+                <button type="submit">Enviar consulta</button>
+            </form>
         </section>
-    </main>   
+    </main>
     <footer>
         <div>
             <img src="assets/img/logonou.png" alt="logo">
         </div>
         <div>
             <h3>Adreça:</h3>
-            <p>C/???</p>
+            <p>C/ Av. de Vives Llull, 15, Maó</p>
         </div>
         <div>
             <h3>Xarxes socials</h3>
@@ -77,6 +107,7 @@
             </nav>
         </div>
     </footer>
-   <script src="js/header.js"></script>
+    <script src="js/header.js"></script>
 </body>
+
 </html>

@@ -38,15 +38,19 @@
                     Nom
                     <input type="text" id="inputNombre" name="nombre" autofocus required>
                 </label>
+                
                 <label for="inputDate">
                     <img src="assets/iconos/icono_date.png">
                     Data
                     <input type="date" id="inputDate" name="date" min="2026-04-30" required>
+                    <p id="errorDate" class="errorMessages display-none">Dilluns no esteim oberts</p>
                 </label>
                 <label for="inputHora">
                     <img src="assets/iconos/icono_clock.png">
                     Hora
                     <input type="time" id="inputHora" name="hora" required>
+                    <p id="errorHora" class="errorMessages display-none">Només obrim de 13:00 a 23:00</p>
+
                 </label>
                 <label for="inputPersones">
                     <img src="assets/iconos/icono_persones.png">
@@ -71,7 +75,7 @@
         </div>
         <div>
             <h3>Adreça:</h3>
-            <p>C/???</p>
+            <p>C/ Av. de Vives Llull, 15, Maó</p>
         </div>
         <div>
             <h3>Xarxes socials</h3>
