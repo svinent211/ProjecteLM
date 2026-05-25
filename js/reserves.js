@@ -2,16 +2,13 @@
 
 
 
-//Guardar informació del restaurant al localStorage
-localStorage.setItem("diesTancat", JSON.stringify([1]));
-localStorage.setItem("horaObertura", "13:00");
-localStorage.setItem("horaTancament", "23:00");
-localStorage.setItem("maxPersones", 18);
 
-const diesTancat = JSON.parse(localStorage.getItem("diesTancat"));
-const horaObertura = localStorage.getItem("horaObertura");
-const horaTancament = localStorage.getItem("horaTancament");
-const maxPersones = localStorage.getItem("maxPersones");
+let dades = JSON.parse(localStorage.getItem("dades"));
+
+const diesTancat = dades.diesTancat;
+const horaObertura = dades.horaObertura;
+const horaTancament = dades.horaTancament;
+const maxPersones = dades.maxPersones;
 
 //Elements del formulari
 const formulari = document.querySelector("form");
@@ -30,7 +27,6 @@ let festiu = false;
 //Camp de nombre de persones
 inputNPersones.max = maxPersones;
 let date = new Date();
-console.log(date);
 let year = date.getFullYear();
 let month = String(date.getMonth() + 1).padStart(2, "0");
 let day = String(date.getDate()).padStart(2, "0");
@@ -52,10 +48,12 @@ inputDate.addEventListener("change", e=> {
     });
     if (festiuLocal) {
         errorDate.classList.remove("display-none");
+        inputDate.classList.add("input-error");
         inputDate.focus(); //Te deixa el focus on toca
 
         
     }else {
+        inputDate.classList.remove("input-error");
         errorDate.classList.add("display-none");
     }
     festiu = festiuLocal;
@@ -68,8 +66,11 @@ inputHora.addEventListener("change", (e)=> {
  if (inputHora.value > horaTancament || inputHora.value < horaObertura) {
         errorHora.classList.remove("display-none");
         dinsHorari = false;
+        inputHora.classList.add("input-error");
         inputHora.focus(); //Te deixa el focus on toca
+        
     }else {
+        inputHora.classList.remove("input-error");
         errorHora.classList.add("display-none");
         dinsHorari = true;
     }
@@ -81,6 +82,7 @@ let reserves = JSON.parse(localStorage.getItem("reserves")) || []; //Si no exist
 
 formulari.addEventListener("submit", e=> {
     e.preventDefault();
+
     if (!dinsHorari || festiu) {
     }else {
         if(!(reserves.find(reserva => reserva.data === inputDate.value && reserva.hora === inputHora.value))) {
@@ -93,6 +95,13 @@ formulari.addEventListener("submit", e=> {
             });
             localStorage.setItem("reserves", JSON.stringify(reserves)); 
 
+            let resum = `¡Reserva realitzada correctament!
+            Resumen:
+            Nom: ${inputNombre.value}
+            Data: ${inputDate.value}
+            Hora: ${inputHora.value}
+            Persones: ${inputNPersones.value}`;
+            alert(resum);
             formulari.reset();
         }else {
             alert("La reserva ja existeix");

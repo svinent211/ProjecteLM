@@ -36,6 +36,11 @@ form label img {
 input{
     max-width: 120px;
 }
+input.input-error {
+    border: 2px solid #ff4d4d !important;
+    background-color: #ffe6e6;
+    animation: shake 0.3s ease-in-out;
+}
 
 button[type="submit"] {
     color: var(--color-accent);
